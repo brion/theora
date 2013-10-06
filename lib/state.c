@@ -256,7 +256,7 @@ static void oc_mb_fill_cmapping10(oc_mb_map_plane _mb_map[3],
   _mb_map:  The macro block map to fill.
   _fplanes: The descriptions of the fragment planes.*/
 static void oc_mb_fill_cmapping11(oc_mb_map_plane _mb_map[3],
- const oc_fragment_plane _fplanes[3]){
+ const oc_fragment_plane _fplanes[3], int stub0, int stub1){ /* stub0/1 added for incompatible pointer type warning in emscripten */
   int k;
   for(k=0;k<4;k++){
     _mb_map[1][k]=_mb_map[0][k]+_fplanes[1].froffset;
