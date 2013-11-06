@@ -107,6 +107,13 @@ ogg_uint32_t oc_cpu_flags_get(void){
   return flags;
 }
 
+#elif defined(__APPLE__)
+
+ogg_uint32_t oc_cpu_flags_get(void){
+  /*All iOS devices are armv6 or higher*/
+  return OC_CPU_ARM_EDSP | OC_CPU_ARM_NEON | OC_CPU_ARM_MEDIA;
+}
+
 #else
 /*The feature registers which can tell us what the processor supports are
    accessible in priveleged modes only, so we can't have a general user-space
