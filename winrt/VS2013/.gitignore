@@ -1,0 +1,7 @@
+Build
+Generated Files
+Output
+*.filters
+*.sdf
+*.opensdf
+*.suo
