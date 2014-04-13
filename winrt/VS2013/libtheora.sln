@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Windows
 VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtheora", "libtheora\libtheora_dynamic.vcxproj", "{653F3841-3F26-49B9-AFCF-091DB4B67031}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtheora.Windows", "libtheora.Windows\libtheora.Windows.vcxproj", "{653F3841-3F26-49B9-AFCF-091DB4B67031}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libtheora", "libtheora", "{3F1473B9-2F2D-4E29-8890-B5515281C4EF}"
 EndProject
