@@ -11,7 +11,7 @@
       <AdditionalIncludeDirectories>..\..\..\..\libogg-$(LIBOGG_VERSION)\include;..\..\..\..\libogg\include;..\..\..\..\..\..\..\core\ogg\libogg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>..\..\..\..\libogg-$(LIBOGG_VERSION)\winrt\VS2013\Output\Windows\$(PlatformName)\$(ConfigurationName);..\..\..\..\libogg\winrt\VS2013\Output\Windows\$(PlatformName)\$(ConfigurationName);..\..\..\..\..\..\..\core\ogg\libogg\winrt\VS2013\Output\Windows\$(PlatformName)\$(ConfigurationName)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\..\libogg-$(LIBOGG_VERSION)\winrt\VS2013\Output\WindowsPhone\$(PlatformName)\$(ConfigurationName);..\..\..\..\libogg\winrt\VS2013\Output\WindowsPhone\$(PlatformName)\$(ConfigurationName);..\..\..\..\..\..\..\core\ogg\libogg\winrt\VS2013\Output\WindowsPhone\$(PlatformName)\$(ConfigurationName)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
