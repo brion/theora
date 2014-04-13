@@ -13,9 +13,77 @@
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
-  <ItemGroup>    
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\analyze.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\apiwrapper.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\bitpack.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\decapiwrapper.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\decinfo.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\decode.c">
+      <ObjectFileName>$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName>$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\dequant.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\encapiwrapper.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\encfrag.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\encinfo.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\encode.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\encoder_disabled.c">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\enquant.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\fdct.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\fragment.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\huffdec.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\huffenc.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\idct.c">
+      <ObjectFileName>$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName>$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\info.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\internal.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\mathops.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\mcenc.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\quant.c">
+      <ObjectFileName>$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName>$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\rate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\state.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\tokenize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\x86_vc\mmxencfrag.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\x86_vc\mmxfdct.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\x86_vc\mmxfrag.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\x86_vc\mmxidct.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\x86_vc\mmxstate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\x86_vc\x86cpu.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\x86_vc\x86enc.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\lib\x86_vc\x86state.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\theora\codec.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\theora\theora.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\theora\theoradec.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\theora\theoraenc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\apiwrapper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\bitpack.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\dct.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\decint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\dequant.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\encint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\enquant.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\huffdec.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\huffenc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\huffman.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\idct.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\internal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\mathops.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\modedec.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\ocintrin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\quant.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\lib\x86_vc\x86cpu.h" />
   </ItemGroup>
 </Project>
