@@ -113,7 +113,7 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
     <OutDir>$(SolutionDir)\Output\Windows\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>Build\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)\Build\libtheora.Windows\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <TargetName>libtheora</TargetName>
