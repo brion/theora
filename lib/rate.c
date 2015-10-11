@@ -1078,7 +1078,7 @@ int oc_enc_rc_2pass_in(oc_enc_ctx *_enc,unsigned char *_buf,size_t _bytes){
         /*We're using a finite buffer:*/
         frames_needed=OC_CLAMPI(0,_enc->rc.buf_delay
          -(_enc->rc.scale_window_end-_enc->rc.scale_window0),
-         _enc->rc.frames_left[0]+_enc->rc.frames_left[1]
+         (int)_enc->rc.frames_left[0]+(int)_enc->rc.frames_left[1]
          -_enc->rc.nframes[0]-_enc->rc.nframes[1]);
         while(frames_needed>0){
           if(!_buf){
@@ -1116,7 +1116,7 @@ int oc_enc_rc_2pass_in(oc_enc_ctx *_enc,unsigned char *_buf,size_t _bytes){
                for the current window.*/
             frames_needed=OC_CLAMPI(0,_enc->rc.buf_delay
              -(_enc->rc.scale_window_end-_enc->rc.scale_window0),
-             _enc->rc.frames_left[0]+_enc->rc.frames_left[1]
+             (int)_enc->rc.frames_left[0]+(int)_enc->rc.frames_left[1]
              -_enc->rc.nframes[0]-_enc->rc.nframes[1]);
             /*Clear the buffer for the next frame.*/
             _enc->rc.twopass_buffer_fill=0;
